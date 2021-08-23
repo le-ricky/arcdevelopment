@@ -1,12 +1,15 @@
 import React from 'react';
+import { ThemeProvider } from '@material-ui/core/styles'
+
+import theme from './ui/theme';
 import Header from '../components/ui/Header';
 
 function App() {
   return (
-    <div className="App">
-      <Header />
+    <ThemeProvider theme={theme}>
+     <Header />
         Hello
-    </div>
+    </ThemeProvider>
   );
 }
 
